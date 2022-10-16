@@ -47,13 +47,6 @@ console.log(itemList.nextSibling);
 
 console.log(itemList.nextElementSibling);
 
-// nextSibling
-
-console.log(itemList.nextSibling);
-
-// nextElementSibling
-
-console.log(itemList.nextElementSibling);
 
 // previousSibling
 
