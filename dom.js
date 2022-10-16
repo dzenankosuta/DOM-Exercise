@@ -23,13 +23,14 @@ console.log(document.images);
 let headerTitle = document.getElementById("header-title"); // pristupanje elementu sa datim id
 let header = document.getElementById("main-header");
 console.log(headerTitle);
+
 // headerTitle.textContent = "Hello";
 console.log(headerTitle.textContent); // ne prati stilove
 console.log(headerTitle.innerText); // slusa stilove
 
 headerTitle.innerHTML = "<h3>Hello</h3>";
 
-// PPROMENA STILOVA //
+// PROMENA STILOVA //
 header.style.borderBottom = "solid 3px #000";
 
 // GETELEMENTSBYCLASSNAME //
@@ -48,7 +49,7 @@ items[1].style.backgroundColor = "yellow";
 
 // GETELEMENTSBYTAGNAME //
 
-let li = document.getElementsByTagName("li"); // uzimanje svih elemenata sa datom klasom
+let li = document.getElementsByTagName("li"); // uzimanje svih elemenata sa datim tagom
 console.log(li);
 console.log(li[1]); // pristupanje drugom takvom elementu
 li[1].textContent = "Hello 2"; // promena sadrzaja
