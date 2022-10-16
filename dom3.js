@@ -6,20 +6,28 @@
 
 function buttonClick(e) {
   //   console.log("Button clicked");
+
   //   document.getElementById("header-title").textContent = "Changed";
   //   document.querySelector("#main").style.backgroundColor = "#f4f4f4";
+
   //   console.log(e);
+
   //   console.log(e.target);
   //   console.log(e.target.id);
   //   console.log(e.target.className);
   //   console.log(e.target.classList);
+
   //   var output = document.getElementById("output");
   //   output.innerHTML = "<h3>" + e.target.id + "</h3>";
+
   //   console.log(e.type);
+
   //   console.log(e.clientX);
   //   console.log(e.clientY);
+
   //   console.log(e.offsetX);
   //   console.log(e.offsetY);
+
   //   console.log(e.altKey);
   //   console.log(e.ctrlKey);
   //   console.log(e.shiftKey);
@@ -42,10 +50,43 @@ let box = document.getElementById("box");
 
 // box.addEventListener("mousemove", runEvent);
 
+let itemInput = document.querySelector("input[type='text']")
+let form = document.querySelector("form")
+let select = document.querySelector("select")
+
+// itemInput.addEventListener('keydown', runEvent)
+// itemInput.addEventListener('keyup', runEvent)
+// itemInput.addEventListener('keypress', runEvent)
+
+// itemInput.addEventListener('focus', runEvent)
+// itemInput.addEventListener('blur', runEvent)
+
+// itemInput.addEventListener('cut', runEvent)
+// itemInput.addEventListener('paste', runEvent)
+
+
+// Bilo kakva radnja sa inputom se hvata
+// itemInput.addEventListener('input', runEvent) 
+
+// select.addEventListener("change", runEvent)
+
+// form.addEventListener("submit", runEvent)
+
+
 function runEvent(e) {
+  e.preventDefault() // for submitting
   console.log("EVENT TYPE: " + e.type);
+
+  // console.log(e.target.value)
 
   //   output.innerHTML =
   //     "<h3>MouseX: " + e.offsetX + "</h3><h3>MouseY: " + e.offsetY + "</h3>";
   //   box.style.backgroundColor = `rgb(${e.offsetX},${e.offsetY},40)`;
+
+  // console.log(e.target.value)
+  // document.getElementById("output").innerHTML = 
+  // `<h3>${e.target.value}</h3>`
+
+
 }
+
